@@ -47,7 +47,7 @@ importers:
       typechain: ^8.0.0
       typedoc: ^0.23.0
       typedoc-just-the-docs-theme: ^0.0.1
-      typedoc-monorepo-link-types: github:LuizAsFight/typedoc-monorepo-link-types#c815d1edea064f9f9498c931156cae6f1002ecdc
+      typedoc-monorepo-link-types: github:luizstacio/typedoc-monorepo-link-types#47e379a59869ce278d7b02a07bab7b5f13012b41
       typedoc-plugin-markdown: ^3.11.12
       typedoc-plugin-sourcefile-url: ^1.0.6
       typescript: ^4.5.2
@@ -95,7 +95,7 @@ importers:
       typechain: 8.1.0_typescript@4.7.4
       typedoc: 0.23.7_typescript@4.7.4
       typedoc-just-the-docs-theme: 0.0.1_pauylbci4yldts32xfcbgrz3ca
-      typedoc-monorepo-link-types: github.com/LuizAsFight/typedoc-monorepo-link-types/c815d1edea064f9f9498c931156cae6f1002ecdc_typedoc@0.23.7
+      typedoc-monorepo-link-types: github.com/luizstacio/typedoc-monorepo-link-types/47e379a59869ce278d7b02a07bab7b5f13012b41_typedoc@0.23.7
       typedoc-plugin-markdown: 3.13.3_typedoc@0.23.7
       typedoc-plugin-sourcefile-url: 1.0.6_typedoc@0.23.7
       typescript: 4.7.4
@@ -8747,11 +8747,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/LuizAsFight/typedoc-monorepo-link-types/c815d1edea064f9f9498c931156cae6f1002ecdc_typedoc@0.23.7:
-    resolution: {tarball: https://codeload.github.com/LuizAsFight/typedoc-monorepo-link-types/tar.gz/c815d1edea064f9f9498c931156cae6f1002ecdc}
-    id: github.com/LuizAsFight/typedoc-monorepo-link-types/c815d1edea064f9f9498c931156cae6f1002ecdc
+  github.com/luizstacio/typedoc-monorepo-link-types/47e379a59869ce278d7b02a07bab7b5f13012b41_typedoc@0.23.7:
+    resolution: {tarball: https://codeload.github.com/luizstacio/typedoc-monorepo-link-types/tar.gz/47e379a59869ce278d7b02a07bab7b5f13012b41}
+    id: github.com/luizstacio/typedoc-monorepo-link-types/47e379a59869ce278d7b02a07bab7b5f13012b41
     name: typedoc-monorepo-link-types
-    version: 0.0.2
+    version: 0.0.4
     peerDependencies:
       typedoc: 0.23.x
     dependencies:
