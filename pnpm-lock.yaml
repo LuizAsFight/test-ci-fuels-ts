@@ -47,7 +47,7 @@ importers:
       typechain: ^8.0.0
       typedoc: ^0.23.0
       typedoc-just-the-docs-theme: ^0.0.1
-      typedoc-monorepo-link-types: github:luizstacio/typedoc-monorepo-link-types#47e379a59869ce278d7b02a07bab7b5f13012b41
+      typedoc-monorepo-link-types: ^0.0.4
       typedoc-plugin-markdown: ^3.11.12
       typedoc-plugin-sourcefile-url: ^1.0.6
       typescript: ^4.5.2
@@ -95,7 +95,7 @@ importers:
       typechain: 8.1.0_typescript@4.7.4
       typedoc: 0.23.7_typescript@4.7.4
       typedoc-just-the-docs-theme: 0.0.1_pauylbci4yldts32xfcbgrz3ca
-      typedoc-monorepo-link-types: github.com/luizstacio/typedoc-monorepo-link-types/47e379a59869ce278d7b02a07bab7b5f13012b41_typedoc@0.23.7
+      typedoc-monorepo-link-types: 0.0.4_typedoc@0.23.7
       typedoc-plugin-markdown: 3.13.3_typedoc@0.23.7
       typedoc-plugin-sourcefile-url: 1.0.6_typedoc@0.23.7
       typescript: 4.7.4
@@ -8348,6 +8348,14 @@ packages:
       typedoc-plugin-markdown: 3.13.3_typedoc@0.23.7
     dev: true
 
+  /typedoc-monorepo-link-types/0.0.4_typedoc@0.23.7:
+    resolution: {integrity: sha512-fAxmfoJSp6cvT+I9/pN9pS2R8EoKUHaKU095E6H7FwN4tZUXPri5CZkxi9JLRlM5SV+pQwIlYnx9b+hnVP0nHA==}
+    peerDependencies:
+      typedoc: 0.23.x
+    dependencies:
+      typedoc: 0.23.7_typescript@4.7.4
+    dev: true
+
   /typedoc-plugin-markdown/3.13.3_typedoc@0.23.7:
     resolution: {integrity: sha512-KKvFkQphRcH26NoBCKjjZ7a3rkPBQAOuWg1F4s+snDSWXfTyGWO5isgoe19VUbG87W8X/0x3uc/O0Nj7Qle3TQ==}
     peerDependencies:
@@ -8745,15 +8753,4 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
-    dev: true
-
-  github.com/luizstacio/typedoc-monorepo-link-types/47e379a59869ce278d7b02a07bab7b5f13012b41_typedoc@0.23.7:
-    resolution: {tarball: https://codeload.github.com/luizstacio/typedoc-monorepo-link-types/tar.gz/47e379a59869ce278d7b02a07bab7b5f13012b41}
-    id: github.com/luizstacio/typedoc-monorepo-link-types/47e379a59869ce278d7b02a07bab7b5f13012b41
-    name: typedoc-monorepo-link-types
-    version: 0.0.4
-    peerDependencies:
-      typedoc: 0.23.x
-    dependencies:
-      typedoc: 0.23.7_typescript@4.7.4
     dev: true
