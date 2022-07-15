@@ -15,13 +15,13 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Cache PNPM modules
-      uses: actions/cache@v3
-      with:
-        path: |
-          ~/.local/share/pnpm/store/v3
-          ~/.pnpm-store/v3
-        key: ${{ runner.os }}-node-${{ inputs.node-version }}-pnpm-${{ inputs.pnpm-version }}-lock-${{ hashFiles('**/pnpm-lock.yaml') }}
+    # - name: Cache PNPM modules
+    #   uses: actions/cache@v3
+    #   with:
+    #     path: |
+    #       ~/.local/share/pnpm/store/v3
+    #       ~/.pnpm-store/v3
+    #     key: ${{ runner.os }}-node-${{ inputs.node-version }}-pnpm-${{ inputs.pnpm-version }}-lock-${{ hashFiles('**/pnpm-lock.yaml') }}
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
