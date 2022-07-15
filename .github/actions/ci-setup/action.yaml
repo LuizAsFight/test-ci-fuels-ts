@@ -6,6 +6,12 @@ inputs:
   pnpm-version:
     description: "PNPM version"
     default: 7.5.1
+  rust-version:
+    description: "Rust version"
+    default: 1.61.0
+  forc-version:
+    description: "Forc version"
+    default: 0.18.1
 runs:
   using: "composite"
   steps:
@@ -26,3 +32,27 @@ runs:
       with:
         version: ${{ inputs.pnpm-version }}
         run_install: true
+
+    - name: Install toolchain
+      uses: actions-rs/toolchain@v1
+      with:
+        profile: minimal
+        toolchain: ${{ inputs.rust-version }}
+        # selecting a toolchain either by action or manual `rustup` calls should happen
+        # before the cache plugin, as it uses the current rustc version as its cache key
+        override: true
+
+    - uses: Swatinem/rust-cache@v1
+
+    - name: Set git config
+      run: |
+        git config --global core.bigfilethreshold 100m
+      shell: bash
+
+    - name: Install Forc
+      run: |
+        curl -sSLf https://github.com/FuelLabs/sway/releases/download/v${{ inputs.forc-version }}/forc-binaries-linux_amd64.tar.gz -L -o forc.tar.gz
+        tar -xvf forc.tar.gz
+        chmod +x forc-binaries/forc
+        mv forc-binaries/forc /usr/local/bin/forc
+      shell: bash
