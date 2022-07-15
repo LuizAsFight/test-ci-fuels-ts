@@ -37,6 +37,7 @@ export const getContractId = (
 ): string => {
   const root = getContractRoot(arrayify(bytecode));
   const contractId = sha256(concat(['0x4655454C', salt, root, stateRoot]));
+
   return contractId;
 };
 
