@@ -35,7 +35,6 @@ export const contractCallScript = new Script<ContractCall[], Uint8Array[]>(
     if (contractCalls.length > callSlotsLength) {
       throw new Error(`At most ${callSlotsLength} calls are supported`);
     }
-
     let refArgData = new Uint8Array();
 
     const scriptCallSlots = [];
