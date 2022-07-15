@@ -82,7 +82,6 @@ describe('Contract', () => {
 
   it('should fail to execute call if gasLimit is too low', async () => {
     const contract = await setup();
-
     let failed;
     try {
       await contract.functions
