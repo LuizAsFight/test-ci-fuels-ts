@@ -18,6 +18,7 @@ export const getPkgPlatform = () => {
   if (process.arch !== 'arm64' && process.arch !== 'x64') {
     throw new Error(`Unsupported arch ${process.arch}`);
   }
+
   return platforms[process.platform][process.arch];
 };
 
