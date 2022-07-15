@@ -6,6 +6,7 @@ import { calcRoot } from '@fuel-ts/merkle';
 export const getContractRoot = (bytecode: Uint8Array): string => {
   const chunkSize = 8;
   const chunks: Uint8Array[] = [];
+
   for (let offset = 0; offset < bytecode.length; offset += chunkSize) {
     const chunk = new Uint8Array(chunkSize);
     chunk.set(bytecode.slice(offset, offset + chunkSize));
